@@ -65,7 +65,7 @@ body {
 }
 @keyframes animate {
   0% {
-    opactiy: 0;
+    opacity: 0;
   }
   10% {
     opacity: 1;
