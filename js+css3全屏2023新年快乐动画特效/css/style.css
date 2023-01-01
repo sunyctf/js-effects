@@ -1,8 +1,12 @@
 * {
-  box-sizing: border-box;margin:0;padding:0;
+  /* 采用怪异模式下的盒模型：元素的总高度和宽度包含内边距和边框(padding与border)  */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  /* 没有滚动条 */
   overflow: hidden;
 }
 
@@ -31,11 +35,14 @@ body {
   text-align: center;
   font-size: 9vw;
   line-height: 2em;
-  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #ccc, 4px 4px 0 #ccc, 5px 5px 0 #ccc, 10px 10px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #ccc, 4px 4px 0 #ccc,
+    5px 5px 0 #ccc, 10px 10px 0 rgba(0, 0, 0, 0.2);
   animation: floating 5s ease-in-out infinite;
 }
 .section .section__title span {
-  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #ccc, 4px 4px 0 #ccc, 5px 5px 0 #ccc, 6px 6px 0 #ccc, 7px 7px 0 #ccc, 8px 8px 0 #ccc, 9px 9px 0 #ccc, 20px 20px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #ccc, 4px 4px 0 #ccc,
+    5px 5px 0 #ccc, 6px 6px 0 #ccc, 7px 7px 0 #ccc, 8px 8px 0 #ccc,
+    9px 9px 0 #ccc, 20px 20px 0 rgba(0, 0, 0, 0.2);
   font-weight: 700;
   font-size: 3em;
 }
@@ -48,7 +55,8 @@ body {
 }
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: skewY(-7deg) translate(0, -20px);
   }
   50% {
