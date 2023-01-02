@@ -23,8 +23,11 @@ body {
   position: absolute;
   width: 30vw;
   height: 30vw;
+  /* 红色边框 */
   border: 5vw solid #ff1062;
+  /* 圆形边框 */
   border-radius: 50%;
+  /* 为边框添加2个下拉阴影 */
   box-shadow: 0 0 0 1vw #222, 0 0 0 1.3vw #fff;
 }
 .section .section__title {
