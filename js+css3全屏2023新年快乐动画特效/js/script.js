@@ -3,6 +3,7 @@ const stars = () => {
   const section = document.querySelector('.section');
   let i = 0;
   while (i < count) {
+    // 在内存中创建一个新的空元素对象,如i或是div
     const star = document.createElement('i');
     // 定义变量x和y ：通过Math.random()方法随机的使星星出现在不同位置，当然星星的定位要在文档显示区内
     const x = Math.floor(Math.random() * window.innerWidth);
@@ -23,10 +24,10 @@ const stars = () => {
     star.style.animationDuration = 2 + duration + 's';
     // 设置延迟 
     star.style.animationDelay = 2 + duration + 's';
-    // 把新创建的节点追加到父元素下所有直接子元素的结尾
+    // 将新元素添加到DOM树：把新创建的节点追加到父元素下所有直接子元素的结尾
     section.appendChild(star);
     i++;
   }
 }
-
+// 调用函数
 stars();
