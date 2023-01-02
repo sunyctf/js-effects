@@ -4,12 +4,13 @@ const stars = () => {
   let i = 0;
   while (i < count) {
     const star = document.createElement('i');
+    // 定义变量x,y ：通过Math.random()方法随机的使星星出现在不同位置，当然星星的定位要在文档显示区内
     const x = Math.floor(Math.random() * window.innerWidth);
     const y = Math.floor(Math.random() * window.innerHeight);
-    
     const size = Math.random() * 4;
     star.style.left = x + 'px';
     star.style.top = y + 'px';
+    // 利用Math.random()这个方法来随机取星星的大小：为每颗星星设置随机的宽高范围为[0,5)
     star.style.width = 1 + size + 'px';
     star.style.height = 1 + size + 'px';
     
