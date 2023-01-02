@@ -66,6 +66,7 @@ body {
     transform: skewY(-7deg) translate(0, 20px);
   }
 }
+/* 利用透明度设置星星明暗变化的动画效果 */
 @keyframes animate {
   0% {
     opacity: 0;
