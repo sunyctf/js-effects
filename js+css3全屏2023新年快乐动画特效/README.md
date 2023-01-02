@@ -6,9 +6,7 @@ js+css3全屏星星闪烁背景2023新年快乐动画特效，文字还有3D立�
 
 #### 在线预览
 
-[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/js+css3全屏2023新年快乐动画特效/index.html)
-
-[Gitee  仓库](https://gitee.com/sunyctf/js-effects)  | [Demo预览](https://sunyctf.gitee.io/vue-el-admin/index.html)
+[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/js+css3全屏2023新年快乐动画特效/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/vue-el-admin/index.html)
 
 #### 软件架构
 
