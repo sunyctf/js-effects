@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jquery层叠式手风琴滑动切换代码演示</title>
+
+<!--可忽略-->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!--动画库-->
+<!-- WOW.js 是轻量级类库,只依赖Animate.css,不依赖其他js库,（无需引用jquery） -->
+<link rel="stylesheet" href="css/animate.min.css">
+
+<!--核心样式-->
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+</head>
+<body>
+
+<article class="content content-what">
+
+	<h2 class="content-topic">手风琴图片轮播</h2>
+
+	<div class="content-main what-list" style="vertical-align: middle;">
+		<div class="what-item what-item-1 wow fadeInLeft" data-wow-delay="0.6s" data-num="1" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+			<span>图片1</span>
+			<div class="what-item-bg"></div>
+		</div>
+		<div class="what-item what-item-2 wow fadeInLeft" data-wow-delay="0.4s" data-num="2" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+			<span>图片2</span>
+			<div class="what-item-bg"></div>
+		</div>
+		<div class="what-item what-item-3 wow fadeInLeft" data-wow-delay="0.2s" data-num="3" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+			<span>图片3</span>
+			<div class="what-item-bg"></div>
+		</div>
+		<div class="what-item what-item-4 what-item-active" data-wow-delay="0s" data-num="4">
+			<span>图片4</span>
+			<div class="what-item-bg"></div>
+		</div>
+		<div class="what-item what-item-5 wow fadeInRight" data-wow-delay="0.2s" data-num="5" style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+			<span>图片5</span>
+			<div class="what-item-bg"></div>
+		</div>
+		<div class="what-item what-item-6 wow fadeInRight" data-wow-delay="0.4s" data-num="6" style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+			<span>图片6</span>
+			<div class="what-item-bg"></div>
+		</div>
+		<div class="what-item what-item-7 wow fadeInRight" data-wow-delay="0.6s" data-num="7" style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+			<span>图片7</span>
+			<div class="what-item-bg"></div>
+		</div>
+	</div>
+	
+	<div class="content-main" style="clear:both;">
+		<p class="what-more active-more" style="display: block;">跑车</p>
+	</div>
+	<div style="height:67px;"></div>
+</article>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+var whatList = ['跑车','美女','生活','大头网','购物','房产','旅游'];
+jQuery(document).ready(function () {
+	// 实例化构造函数，调用基础方法。
+	new WOW().init(); // WOW要大写
+});
+</script>
+
+
+</body>
+</html>

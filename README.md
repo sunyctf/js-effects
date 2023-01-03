@@ -9,6 +9,7 @@
 ## boot-jQuery
 
 - [js+css3全屏2023新年快乐动画特效](https://sunyctf.github.io/js-effects/js+css3全屏2023新年快乐动画特效/index.html)
+- [jquery层叠式手风琴滑动切换代码](https://sunyctf.github.io/js-effects/jquery层叠式手风琴滑动切换代码/index.html)
 
 ## 使用说明
 
