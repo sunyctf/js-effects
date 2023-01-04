@@ -1,0 +1,43 @@
+:root {
+  --alpha: 0.8;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #191919;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background-color: rgba(255, 0, 139, 0.8);
+}
+
+::selection {
+  background-color: rgba(255, 0, 139, 0.8);
+}
+
+.heading {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typo {
+  color: rgba(255, 255, 255, var(--alpha));
+  cursor: default;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-size: 15vmax;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  outline: none;
+  padding: 0 10% 1.2% 10%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.1s linear;
+}
