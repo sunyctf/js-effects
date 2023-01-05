@@ -4,6 +4,10 @@
 
 jquery层叠式手风琴滑动切换代码，基于[WOW.js](https://www.delac.io/WOW/docs.html)默认设置元素动画，鼠标点击可以滑动切换图片。注：[WOW.js是Animate.css的黄金搭档](https://blog.csdn.net/sunyctf/article/details/128534064)
 
+#### 技术栈
+
+HTML + CSS + JS + JQuery + WOW.js
+
 #### 在线预览
 
 [Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/jquery层叠式手风琴滑动切换代码/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/js-effects/jquery层叠式手风琴滑动切换代码/index.html)

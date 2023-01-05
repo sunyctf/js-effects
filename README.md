@@ -11,10 +11,11 @@
 - [js+css3全屏2023新年快乐动画特效](https://sunyctf.github.io/js-effects/js+css3全屏2023新年快乐动画特效/index.html)
 - [jquery层叠式手风琴滑动切换代码](https://sunyctf.github.io/js-effects/jquery层叠式手风琴滑动切换代码/index.html)
 - [鼠标悬停层叠拆分文字动态效果](https://sunyctf.github.io/js-effects/鼠标悬停层叠拆分文字动态效果/index.html)
+- [标题响应式导航栏菜单弹出效果](https://sunyctf.github.io/js-effects/标题响应式导航栏菜单弹出效果/index.html)
 
 ## 使用说明
 
-HTMl、CSS3、JavaScript、DOM、Jquery
+HTMl、CSS、JavaScript、DOM、JQuery
 
 ## 安装教程
 
