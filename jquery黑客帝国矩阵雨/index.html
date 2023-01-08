@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>实现黑客帝国矩阵雨效果</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /*basic reset*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /*adding a black bg to the body to make things clearer*/
+    body {
+      background: black;
+    }
+
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+    var c = document.getElementById("c");
+    var ctx = c.getContext("2d");
+
+    //making the canvas full screen | 让画布全屏
+    c.height = window.innerHeight;
+    c.width = window.innerWidth;
+
+    //chinese characters - taken from the unicode charset | 汉字 - 取自unicode字符集
+    var chinese =
+      "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
+    //converting the string into an array of single characters | 将字符串转换为单个字符数组
+    chinese = chinese.split("");
+
+    var font_size = 10;
+    var columns = c.width / font_size; //number of columns for the rain | 雨水柱数
+    //an array of drops - one per column | 雨滴的阵列 - 每列一个
+    var drops = [];
+    //x below is the x coordinate | 下面的x是x坐标
+    //1 = y co-ordinate of the drop(same for every drop initially) | 雨滴的y坐标(最初每一滴相同)
+    for (var x = 0; x < columns; x++) drops[x] = 1;
+
+    //drawing the characters | 绘制字符
+    function draw() {
+      //Black BG for the canvas | 画布黑色背景
+      //translucent BG to show trail | 半透明背景显示轨迹
+      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillRect(0, 0, c.width, c.height);
+
+      ctx.fillStyle = "#0F0"; //green text
+      ctx.font = font_size + "px arial";
+      //looping over drops | 在雨滴上循环
+      for (var i = 0; i < drops.length; i++) {
+        //a random chinese character to print | 要打印的随机汉字
+        var text = chinese[Math.floor(Math.random() * chinese.length)];
+        //x = i*font_size, y = value of drops[i]*font_size
+        ctx.fillText(text, i * font_size, drops[i] * font_size);
+
+        //sending the drop back to the top randomly after it has crossed the screen | 在水滴越过屏幕后，将其随机发送回顶部
+        //adding a randomness to the reset to make the drops scattered on the Y axis | 将随机性添加到重置，以使液滴分散在Y轴上
+        if (drops[i] * font_size > c.height && Math.random() > 0.975)
+          drops[i] = 0;
+
+        //incrementing Y coordinate | 递增Y坐标
+        drops[i]++;
+      }
+    }
+    setInterval(draw, 33);
+  </script>
+</body>
+</html>

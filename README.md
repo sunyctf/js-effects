@@ -13,6 +13,7 @@
 - [鼠标悬停层叠拆分文字动态效果](https://sunyctf.github.io/js-effects/鼠标悬停层叠拆分文字动态效果/index.html)
 - [标题响应式导航栏菜单弹出效果](https://sunyctf.github.io/js-effects/标题响应式导航栏菜单弹出效果/index.html)
 - [easeljs实现满屏漂浮爱心](https://sunyctf.github.io/js-effects/easeljs实现满屏漂浮爱心/index.html)
+- [jquery黑客帝国矩阵雨](https://sunyctf.github.io/js-effects/jquery黑客帝国矩阵雨/index.html)
 
 ## 使用说明
 
