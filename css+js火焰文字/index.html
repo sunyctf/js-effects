@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5火焰文字特效DEMO演示</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+  </head>
+  <body>
+    <div
+      style="
+        text-align: center;
+        clear: both;
+        position: absolute;
+        top: 10px;
+        left: 260px;
+        z-index: 999;
+      "
+    >
+    </div>
+    <div id="canvasContainer"></div>
+    <span id="textInputSpan">
+      Your name (max 10 chars) :
+      <input id="textInput" maxlength="10" type="text" width="150" />
+      <button onclick="changeText()">GO!</button>
+    </span>
+    <script src="js/index.js"></script>
+  </body>
+</html>
