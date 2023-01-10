@@ -14,6 +14,7 @@
 - [标题响应式导航栏菜单弹出效果](https://sunyctf.github.io/js-effects/标题响应式导航栏菜单弹出效果/index.html)
 - [easeljs实现满屏漂浮爱心](https://sunyctf.github.io/js-effects/easeljs实现满屏漂浮爱心/index.html)
 - [jquery黑客帝国矩阵雨](https://sunyctf.github.io/js-effects/jquery黑客帝国矩阵雨/index.html)
+- [css+js火焰文字](https://sunyctf.github.io/js-effects/css+js火焰文字/index.html)
 
 ## 使用说明
 
