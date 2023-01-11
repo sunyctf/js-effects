@@ -1,0 +1,63 @@
+:root {
+  --gutter: 0.75rem;
+}
+
+.image {
+  width: 100%;
+}
+
+.grid {
+  width: 100%;
+  max-width: 60rem;
+  margin: 1rem auto;
+  display: grid;
+  grid-gap: var(--gutter);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background: #e8e8e8;
+}
+
+.item {
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  will-change: filter;
+}
+
+.envelope {
+  clip-path: polygon(5% 5%, 95% 5%, 95% 95%, 5% 95%);
+  will-change: clip-path;
+  pointer-events: none;
+}
+
+.item:hover {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.6));
+}
+
+.item:hover .envelope {
+  animation: 0.25s ease-out forwards grow;
+}
+
+.item.go-back .envelope {
+  animation: 0.3s ease-in shrink;
+}
+
+@keyframes grow {
+  0% {
+    clip-path: polygon(5% 5%, 95% 5%, 95% 95%, 5% 95%);
+  }
+  50% {
+    clip-path: polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%);
+  }
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes shrink {
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%);
+  }
+  100% {
+    clip-path: polygon(5% 5%, 95% 5%, 95% 95%, 5% 95%);
+  }
+}

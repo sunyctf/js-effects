@@ -15,6 +15,7 @@
 - [easeljs实现满屏漂浮爱心](https://sunyctf.github.io/js-effects/easeljs实现满屏漂浮爱心/index.html)
 - [jquery黑客帝国矩阵雨](https://sunyctf.github.io/js-effects/jquery黑客帝国矩阵雨/index.html)
 - [css+js火焰文字](https://sunyctf.github.io/js-effects/css+js火焰文字/index.html)
+- [css+js鼠标悬停图片剪辑路径效果](https://sunyctf.github.io/js-effects/css+js鼠标悬停图片剪辑路径效果/index.html)
 
 ## 使用说明
 
