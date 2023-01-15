@@ -16,7 +16,8 @@
 - [jquery黑客帝国矩阵雨](https://sunyctf.github.io/js-effects/jquery黑客帝国矩阵雨/index.html)
 - [css+js火焰文字](https://sunyctf.github.io/js-effects/css+js火焰文字/index.html)
 - [css+js鼠标悬停图片剪辑路径效果](https://sunyctf.github.io/js-effects/css+js鼠标悬停图片剪辑路径效果/index.html)
-- [css+js圆盘时钟](https://sunyctf.github.io/js-effects/css+js圆盘时钟/index.html) 
+- [css+js圆盘时钟](https://sunyctf.github.io/js-effects/css+js圆盘时钟/index.html)
+- [css+js卡片翻转](https://sunyctf.github.io/js-effects/css+js卡片翻转/index.html) 
 
 ## 使用说明
 
