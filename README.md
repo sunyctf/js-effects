@@ -18,6 +18,7 @@
 - [css+js鼠标悬停图片剪辑路径效果](https://sunyctf.github.io/js-effects/css+js鼠标悬停图片剪辑路径效果/index.html)
 - [css+js圆盘时钟](https://sunyctf.github.io/js-effects/css+js圆盘时钟/index.html)
 - [css+js卡片翻转](https://sunyctf.github.io/js-effects/css+js卡片翻转/index.html) 
+- [canvas烟花动画](https://sunyctf.github.io/js-effects/canvas烟花动画/index.html) 
 
 ## 使用说明
 
