@@ -19,6 +19,7 @@
 - [css+js圆盘时钟](https://sunyctf.github.io/js-effects/css+js圆盘时钟/index.html)
 - [css+js卡片翻转](https://sunyctf.github.io/js-effects/css+js卡片翻转/index.html) 
 - [canvas烟花动画](https://sunyctf.github.io/js-effects/canvas烟花动画/index.html) 
+- [css+js人物关节拉伸模拟动画](https://sunyctf.github.io/js-effects/css+js人物关节拉伸模拟动画/index.html) 
 
 ## 使用说明
 
