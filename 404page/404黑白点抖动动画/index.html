@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>404: Minimalist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg class="overlay text" viewBox="0 0 900 400">
+		<symbol id="main">
+			<text text-anchor="middle" x="50%" y="50%" dy="0.25em" class="txt">404</text>
+      <text text-anchor="middle" x="50%" y="90%" dy="0.25em" class="txt2">Not Found</text>
+		</symbol>
+		<mask id="msk" maskunits="userSpaceOnUse" maskcontentunits="userSpaceOnUse">
+			<rect width="100%" height="100%" class="wrap">
+			</rect>
+			<use xlink:href="#main" class="mtxt"></use>
+		</mask>
+	</svg>
+			<section>
+				<h1 href="#">
+					<div class="fill">
+<canvas id="canv" width = "460" height = "360" style=background: hsla(0, 0%, 0%, 1);>
+</canvas>
+					</div>
+					<svg viewBox="0 0 100% 100%" class="inv">
+						<rect width="100%" height="100%" mask="url(#msk)" 
+      class="rect" />
+						<use xlink:href="#main" class="clear"></use>
+					</svg>
+				</h1>
+			</section>
+<!-- partial -->
+  <script  src="./js/script.js"></script>
+
+</body>
+</html>
