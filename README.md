@@ -7,19 +7,23 @@
 ❣️ 前端JS特效合集—JavaScript effects library
 
 ## 内容目录
+- [404page](#404page)
+1. [js+css3全屏2023新年快乐动画特效](https://sunyctf.github.io/js-effects/js+css3全屏2023新年快乐动画特效/index.html)
+2. [jquery层叠式手风琴滑动切换代码](https://sunyctf.github.io/js-effects/jquery层叠式手风琴滑动切换代码/index.html)
+3. [鼠标悬停层叠拆分文字动态效果](https://sunyctf.github.io/js-effects/鼠标悬停层叠拆分文字动态效果/index.html)
+4. [标题响应式导航栏菜单弹出效果](https://sunyctf.github.io/js-effects/标题响应式导航栏菜单弹出效果/index.html)
+5. [easeljs实现满屏漂浮爱心](https://sunyctf.github.io/js-effects/easeljs实现满屏漂浮爱心/index.html)
+6. [jquery黑客帝国矩阵雨](https://sunyctf.github.io/js-effects/jquery黑客帝国矩阵雨/index.html)
+7. [css+js火焰文字](https://sunyctf.github.io/js-effects/css+js火焰文字/index.html)
+8. [css+js鼠标悬停图片剪辑路径效果](https://sunyctf.github.io/js-effects/css+js鼠标悬停图片剪辑路径效果/index.html)
+9. [css+js圆盘时钟](https://sunyctf.github.io/js-effects/css+js圆盘时钟/index.html)
+10. [css+js卡片翻转](https://sunyctf.github.io/js-effects/css+js卡片翻转/index.html) 
+11. [canvas烟花动画](https://sunyctf.github.io/js-effects/canvas烟花动画/index.html) 
+12. [css+js人物关节拉伸模拟动画](https://sunyctf.github.io/js-effects/css+js人物关节拉伸模拟动画/index.html) 
 
-- [js+css3全屏2023新年快乐动画特效](https://sunyctf.github.io/js-effects/js+css3全屏2023新年快乐动画特效/index.html)
-- [jquery层叠式手风琴滑动切换代码](https://sunyctf.github.io/js-effects/jquery层叠式手风琴滑动切换代码/index.html)
-- [鼠标悬停层叠拆分文字动态效果](https://sunyctf.github.io/js-effects/鼠标悬停层叠拆分文字动态效果/index.html)
-- [标题响应式导航栏菜单弹出效果](https://sunyctf.github.io/js-effects/标题响应式导航栏菜单弹出效果/index.html)
-- [easeljs实现满屏漂浮爱心](https://sunyctf.github.io/js-effects/easeljs实现满屏漂浮爱心/index.html)
-- [jquery黑客帝国矩阵雨](https://sunyctf.github.io/js-effects/jquery黑客帝国矩阵雨/index.html)
-- [css+js火焰文字](https://sunyctf.github.io/js-effects/css+js火焰文字/index.html)
-- [css+js鼠标悬停图片剪辑路径效果](https://sunyctf.github.io/js-effects/css+js鼠标悬停图片剪辑路径效果/index.html)
-- [css+js圆盘时钟](https://sunyctf.github.io/js-effects/css+js圆盘时钟/index.html)
-- [css+js卡片翻转](https://sunyctf.github.io/js-effects/css+js卡片翻转/index.html) 
-- [canvas烟花动画](https://sunyctf.github.io/js-effects/canvas烟花动画/index.html) 
-- [css+js人物关节拉伸模拟动画](https://sunyctf.github.io/js-effects/css+js人物关节拉伸模拟动画/index.html) 
+### 404page
+
+- [404黑白点抖动动画](https://sunyctf.github.io/js-effects/404page/404黑白点抖动动画/index.html)
 
 ## 使用说明
 
