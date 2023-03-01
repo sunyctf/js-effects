@@ -10,7 +10,7 @@ HTML + CSS + JS + DOM
 
 #### 在线预览
 
-[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/鼠标悬停层叠拆分文字动态效果/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/js-effects/鼠标悬停层叠拆分文字动态效果/index.html)
+[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/css+js3D立体杯子旋转动画/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/js-effects/css+js3D立体杯子旋转动画/index.html)
 
 #### 软件架构
 
