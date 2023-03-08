@@ -21,6 +21,7 @@
 11. [canvas烟花动画](https://sunyctf.github.io/js-effects/canvas烟花动画/index.html) 
 12. [css+js人物关节拉伸模拟动画](https://sunyctf.github.io/js-effects/css+js人物关节拉伸模拟动画/index.html) 
 13. [css+js3D立体杯子旋转动画](https://sunyctf.github.io/js-effects/css+js3D立体杯子旋转动画/index.html) 
+13. [canvas粒子组合三角形3D旋转动画](https://sunyctf.github.io/js-effects/canvas粒子组合三角形3D旋转动画/index.html) 
 
 ### 404page
 
