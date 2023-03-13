@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+body {
+  background-color: #000000;
+  margin: 0;
+  overflow: hidden;
+  font-size: 0;
+  section {
+    background: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    canvas {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+}

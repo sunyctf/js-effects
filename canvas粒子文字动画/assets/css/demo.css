@@ -1,0 +1,33 @@
+/**
+ * demo.css
+ * https://coidea.website
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2018, COIDEA
+ * https://coidea.website
+ */
+
+  /* @import url("https://fonts.googleapis.com/css?family=Abril+Fatface"); */
+
+  body {
+    background-color: #000000;
+    margin: 0;
+    overflow: hidden;
+    font-size: 0;
+  }
+  body section {
+    background: url(../img/bcg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-weight: 700;
+  }
+  body section canvas {
+    width: 100vw;
+    height: 100vh;
+  }
