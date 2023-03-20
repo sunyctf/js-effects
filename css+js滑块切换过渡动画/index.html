@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>17sucai - Slider Transition (City Slider)</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <body>
+        <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <svg xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-0" viewbox="0 0 90 100.1">
+        <path d="M78.4 13C86.1 21.6 90 34 90 50c0 16.1-3.9 28.4-11.6 37.1-7.7 8.7-18.9 13-33.3 13-14.6 0-25.7-4.3-33.5-13C3.9 78.5 0 66.1 0 50s3.9-28.5 11.6-37.1C19.4 4.3 30.5 0 45.1 0c14.4 0 25.6 4.3 33.3 13zM38.1 26c-1.7 1.7-2.9 4.4-3.6 8.2-.7 3.8-1.1 9-1.1 15.8 0 6.7.4 12 1.1 15.8.7 3.8 2 6.6 3.6 8.3 1.7 1.7 4 2.5 7 2.5 2.9 0 5.2-.8 6.9-2.5s2.9-4.4 3.6-8.3c.7-3.8 1.1-9.1 1.1-15.8 0-6.7-.4-12-1.1-15.8-.7-3.8-1.9-6.5-3.6-8.2-1.6-1.7-3.9-2.5-6.9-2.5-3 0-5.3.9-7 2.5z"></path>
+      </symbol>
+      <symbol id="icon-1" viewbox="0 0 49.6 98.1">
+        <path d="M0 0h49.6v98.1H17.1V25.6H0V0z"></path>
+      </symbol>
+      <symbol id="icon-2" viewbox="0 0 80.9 99.5">
+        <path d="M80.9 74.6v24.9h-77l-.1-20.4 34.3-35.4c2.1-2.2 3.9-4.5 5.3-6.7s2.1-4.2 2.1-5.7c0-1.7-.6-3-1.8-3.9-1.2-.9-2.8-1.3-5-1.3-3.6 0-7.8 1.1-12.5 3.4-4.7 2.2-9.4 5.3-14.3 9.2L0 15.3C14.9 5.1 29.5 0 43.8 0 50.5 0 56.6 1.1 62 3.4c5.4 2.2 9.7 5.4 12.8 9.4 3.1 4 4.7 8.6 4.7 13.7 0 5.3-1.7 10.7-5 16-3.4 5.4-8.1 11.1-14.3 17.1l-15.1 15h35.8z"></path>
+      </symbol>
+      <symbol id="icon-behance" viewbox="0 0 22 14">
+        <path d="M6.2.3c.6 0 1.2.1 1.7.2s1 .3 1.3.5c.4.3.7.6.9 1 .2.4.3.9.3 1.5 0 .7-.1 1.2-.5 1.7-.2.5-.7.8-1.3 1.1.8.2 1.4.6 1.8 1.2.4.6.6 1.3.6 2.1 0 .7-.1 1.2-.4 1.7-.3.5-.6.9-1 1.2-.4.3-.9.5-1.5.7-.6.1-1.1.2-1.7.2H0V.3h6.2zm-.4 5.3c.5 0 .9-.1 1.3-.4.4-.2.5-.6.5-1.2 0-.3-.1-.6-.2-.8-.1-.1-.2-.3-.4-.4-.2-.1-.4-.2-.6-.2-.2 0-.5-.1-.7-.1H2.9v3.1h2.9zm.2 5.6c.3 0 .6 0 .8-.1.3-.1.5-.1.7-.3.2-.1.4-.3.5-.5.1-.2.2-.5.2-.9-.1-.6-.2-1.1-.6-1.4-.4-.3-.9-.4-1.5-.4H2.9v3.6H6z"></path>
+        <path d="M15.7 11.2c.4.4 1 .6 1.7.6.5 0 1-.1 1.4-.4.4-.3.6-.6.7-.8h2.3c-.4 1.1-.9 2-1.7 2.5-.8.5-1.7.7-2.8.7-.8 0-1.4-.1-2-.4-.6-.2-1.1-.6-1.5-1-.4-.4-.7-1-1-1.6-.2-.6-.3-1.3-.3-2s.1-1.4.4-2c.2-.6.6-1.2 1-1.6.4-.5.9-.8 1.5-1.1.6-.3 1.3-.4 2-.4.8 0 1.5.2 2.1.5.6.3 1.1.7 1.5 1.3.4.5.7 1.1.8 1.8.2.6.2 1.3.2 2h-6.9c0 .8.2 1.5.6 1.9zm3.1-5c-.3-.3-.8-.5-1.5-.5-.4 0-.8.1-1 .2-.3.1-.6.3-.7.5-.2.2-.3.4-.4.7-.1.2-.1.4-.1.6h4.3c-.1-.7-.3-1.2-.6-1.5z"></path>
+        <path d="M14.6 1h5.3v1.3h-5.3z"></path>
+      </symbol>
+      <symbol id="icon-brutalism" viewbox="0 0 807.7 102.9">
+        <path d="M70.3 5.6c5.9 2.1 10.4 4.9 13.6 8.7 3.2 3.7 4.8 8.1 4.8 13s-1.5 9.2-4.5 13c-3 3.8-7 6.5-12 8 5.9 1.3 10.6 4.2 14.1 8.8 3.5 4.5 5.3 9.9 5.3 16 0 5.5-1.6 10.4-4.9 14.6-3.3 4.2-7.9 7.4-13.8 9.7-5.9 2.2-12.9 3.4-20.8 3.4H0V2.5h49.7c7.8 0 14.7 1 20.6 3.1zm-17 32.8c1.4-1.3 2-3 2-5.2 0-2.1-.7-3.7-2-5-1.4-1.3-3.1-1.9-5.4-1.9H32.3v14h15.5c2.3 0 4.1-.6 5.5-1.9zm1.8 36.3c1.8-1.4 2.7-3.3 2.7-5.7 0-2.1-.9-3.9-2.7-5.2-1.8-1.3-4.2-2-7.2-2H32.3v15h15.5c3.1.1 5.5-.7 7.3-2.1z"></path>
+        <path d="M154.3 100.7l-11.8-25.5h-12.2v25.5H97.9V2.5h47.5c13.3 0 23.7 3.1 30.9 9.2 7.3 6.1 10.9 14.8 10.9 26 0 7.1-1.3 13.3-4 18.5-2.7 5.3-6.5 9.5-11.6 12.5l19.3 31.9h-36.6zm-24-50.2h15c3.5 0 6.3-1 8.2-3.1 1.9-2.1 2.9-5 2.9-8.8 0-3.6-1-6.5-2.9-8.5s-4.6-3-8.2-3h-15v23.4z"></path>
+        <path d="M231.1 71.4c2.8 3 6.2 4.5 10.1 4.5 3.8 0 7-1.5 9.5-4.4s3.8-6.8 3.8-11.6V2.5H287v57.4c0 8.6-1.9 16.1-5.7 22.6-3.8 6.5-9.1 11.5-16 15s-15 5.3-24.2 5.3-17.4-1.8-24.4-5.3-12.5-8.6-16.4-15c-3.9-6.5-5.8-14-5.8-22.6V2.5H227v57.4c-.1 4.7 1.3 8.5 4.1 11.5z"></path>
+        <path d="M289.8 2.5h88.3v25.6h-28v72.5h-32.5V28.1h-27.9V2.5z"></path>
+        <path d="M442.8 100.7l-4.9-13.9h-36.8l-5 13.9h-33.3l41.4-98.1h33.3l39.9 98.1h-34.6zm-33.3-37.1h20.4l-10.1-28.7-10.3 28.7z"></path>
+        <path d="M479.5 2.5H512v71.1h40.9v27h-73.4V2.5z"></path>
+        <path d="M557.8 2.5h32.5v98.1h-32.5V2.5z"></path>
+        <path d="M656.5 28.4c-6.5-2.3-11.9-3.5-16-3.5-4 0-6 1.4-6 4.3 0 2.2 1.3 4 3.8 5.2 2.6 1.2 6.7 2.6 12.2 4.1 7 2 12.8 3.9 17.4 5.9 4.6 2 8.7 5.1 12.1 9.3 3.5 4.2 5.2 9.8 5.2 16.7 0 7.1-1.8 13-5.5 17.8-3.7 4.8-8.7 8.4-14.9 10.7-6.3 2.3-13.2 3.5-20.9 3.5-8.7 0-17.4-1.4-26.2-4.3-8.8-2.8-16.5-6.7-22.9-11.7l12-24.5c4.9 4.3 11.2 8 18.6 11 7.5 3 13.7 4.5 18.8 4.5 2.4 0 4.3-.4 5.7-1.3 1.4-.9 2.1-2.3 2.1-4.1 0-2.2-1.3-4-4-5.2-2.7-1.3-6.8-2.6-12.5-4-6.9-1.8-12.7-3.6-17.3-5.5-4.6-1.9-8.6-4.9-12-8.9-3.4-4-5-9.4-5-16.1 0-6.5 1.7-12.2 5.2-17.2 3.5-4.9 8.4-8.7 14.7-11.3 6.3-2.6 13.7-3.9 22.1-3.9 7.7 0 15.3 1.1 22.9 3.2 7.6 2.1 14.2 5 19.8 8.5l-11.8 24.8c-5.2-2.9-11.1-5.6-17.6-8z"></path>
+        <path d="M690.2 2.5h34.4L749 53.8l24.2-51.2h34.4v98.1h-28.4V46.9l-19.7 44.2h-21.1l-19.7-44.2v53.8h-28.4V2.5z"></path>
+      </symbol>
+      <symbol id="icon-codepen" viewbox="0 0 250 250">
+        <path d="M249.819 85.048c-.837-4.555-4.112-6.743-7.588-9.06l-11.993-7.996-40.056-26.704-41.197-27.465-13.42-8.946c-2.276-1.518-4.738-3.573-7.381-4.394-4.938-1.534-8.584.95-12.376 3.477l-12.239 8.159L63.308 38.96 22.287 66.308 9.098 75.101c-2.267 1.511-5.017 2.965-6.739 5.121-3.076 3.851-2.36 9.161-2.36 13.777v66.634c0 1.438-.074 2.901.184 4.321.559 3.08 2.379 5.545 4.927 7.289 2.534 1.734 5.112 3.408 7.667 5.111l35.967 23.978 43.194 28.796 26.079 17.386c1.302.868 2.592 1.679 4.133 2.103 3.304.909 6.538.08 9.325-1.766 2.755-1.825 5.5-3.667 8.25-5.5l36.562-24.374 43.027-28.685 25.152-16.768c1.48-.987 2.828-2.112 3.808-3.63 1.412-2.189 1.726-4.611 1.726-7.132V96.166c0-3.607.428-7.539-.181-11.118zM125 150.415l-33.271-22.254-4.724-3.159 33.35-22.308 3.075-2.057c.331-.222 1.09-.972 1.502-1.005.732-.058 2.419 1.528 3.034 1.94l19.504 13.045 15.527 10.385-33.273 22.254-4.724 3.159zm-10.742-69.488l-13.26 8.869-23.604 15.787-7.92 5.297c-.393.263-1.188 1.052-1.669 1.116-.278.037-.379-.09-.68-.291-6.241-4.162-12.47-8.341-18.705-12.511L36.992 91.55l-4.185-2.799c-.664-.444-1.927-.967-2.409-1.612-.062-.083-.222-.149-.311-.208l8.399-5.599 20.049-13.366 24.363-16.242 20.969-13.979 6.95-4.634 2.164-1.443c.202-.135.884-.771 1.133-.755l.143-.095v50.109zM48.36 125.002l-23.509 15.725-3.365 2.251v-35.954l23.509 15.726 3.365 2.251zm19.322 12.925l14.33 9.584 24.394 16.315 7.077 4.733c.221.148.662.339.774.569.21.432 0 1.5 0 1.967v44.881c0 .833.216 2.007 0 2.817-.03.113 0 .274 0 .393l-8.399-5.599-20.049-13.366-24.363-16.242-20.969-13.98-6.95-4.634-2.164-1.443c-.214-.143-1.038-.509-1.133-.756l-.143-.095 33.011-22.078 4.585-3.067zm68.058 31.15l13.26-8.869 23.604-15.787 7.92-5.297c.393-.263 1.188-1.052 1.669-1.116.278-.037.379.09.68.291 6.241 4.162 12.471 8.34 18.706 12.51l11.429 7.643 4.186 2.799c.664.444 1.927.967 2.41 1.611.062.083.222.149.311.208l-8.399 5.599-20.05 13.366-24.364 16.242-20.97 13.98-6.951 4.634-2.164 1.443c-.202.135-.884.771-1.133.755l-.143.095v-50.109zm65.898-44.075l23.512-15.726 3.366-2.251v35.954l-23.512-15.725-3.366-2.251zm-19.322-12.925l-14.33-9.584-24.394-16.315-7.077-4.733c-.221-.148-.662-.339-.774-.569-.21-.432 0-1.5 0-1.967V34.028c0-.833-.216-2.007 0-2.817.03-.113 0-.274 0-.393l8.399 5.599 20.05 13.366 24.364 16.242 20.97 13.979 6.951 4.634 2.164 1.443c.214.143 1.038.509 1.133.755l.143.095-33.014 22.08-4.586 3.067z"></path>
+      </symbol>
+      <symbol id="icon-dribbble" viewbox="0 0 16 16">
+        <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 1.4c1.5 0 2.9.5 4 1.4-.8 1-1.9 1.9-3.3 2.5C8 4 7.3 2.8 6.4 1.6c.5-.1 1-.2 1.6-.2zm-3 .7c.9 1.2 1.7 2.4 2.4 3.6-1.6.5-3.6.7-5.8.7C2 4.5 3.3 3 5 2.1zM1.4 8v-.2c2.6 0 4.8-.3 6.6-.9.2.3.3.6.4 1-2.2.7-4 2.1-5.5 4.3C2 11.1 1.4 9.6 1.4 8zm2.5 5.2c1.3-2.1 3-3.4 5.1-4 .6 1.6 1.1 3.3 1.4 5-2.3.8-4.7.4-6.5-1zm7.8.3c-.3-1.6-.7-3.1-1.3-4.6 1.2-.2 2.6-.1 4.1.1-.3 1.9-1.3 3.5-2.8 4.5zM9.9 7.6c-.2-.4-.4-.8-.6-1.1 1.5-.7 2.8-1.6 3.7-2.7.9 1.1 1.5 2.4 1.5 3.9-1.6-.4-3.2-.4-4.6-.1z"></path>
+      </symbol>
+      <symbol id="icon-facebook" viewbox="0 0 9 16">
+        <path d="M5.7 16V8.7h2.4l.4-2.8H5.7V4c0-.8.2-1.4 1.4-1.4h1.5V.1C8.4.1 7.5 0 6.5 0 4.3 0 2.8 1.3 2.8 3.8v2.1H.3v2.8h2.5V16h2.9z"></path>
+      </symbol>
+      <symbol id="icon-instagram" viewbox="0 0 16 16">
+        <path d="M8 0H4.7c-.9 0-1.4.2-1.9.4s-1 .5-1.4.9c-.5.5-.8.9-1 1.5-.2.5-.3 1.1-.4 1.9v6.6c0 .9.2 1.4.4 1.9s.5 1 .9 1.4c.4.4.9.7 1.4.9.5.2 1.1.3 1.9.4h6.6c.9 0 1.4-.2 1.9-.4s1-.5 1.4-.9c.4-.4.7-.9.9-1.4.2-.5.3-1.1.4-1.9V8 4.7c0-.9-.2-1.4-.4-1.9s-.5-1-.9-1.4c-.4-.4-.9-.7-1.4-.9-.5-.2-1.1-.3-1.9-.4-.8-.1-1-.1-3.2-.1m0 1.4h3.2c.8 0 1.2.2 1.5.3.4.1.6.3.9.6.3.3.5.5.6.9.1.3.2.7.3 1.5v6.4c0 .8-.2 1.2-.3 1.5-.1.4-.3.6-.6.9-.3.3-.5.5-.9.6-.3.1-.7.2-1.5.3H4.8c-.8 0-1.2-.2-1.5-.3-.4-.1-.6-.3-.9-.6-.3-.3-.5-.5-.6-.9-.1-.3-.2-.7-.3-1.5V7.9 4.7c0-.8.2-1.2.3-1.5.1-.4.3-.6.6-.9.3-.3.5-.5.9-.6.3 0 .7-.2 1.5-.2.8-.1 1.1-.1 3.2-.1"></path>
+        <path d="M8 10.7c-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7m0-6.8C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9"></path>
+        <path d="M13.2 3.7c0 .5-.4 1-1 1-.5 0-1-.4-1-1 0-.5.4-1 1-1 .6.1 1 .5 1 1"></path>
+      </symbol>
+      <symbol id="icon-op-pr" viewbox="0 0 21 16">
+        <path d="M13 0c-.9 0-1.7.1-2.5.4C9.7.1 8.9 0 8 0 3.6 0 0 3.6 0 8s3.6 8 8 8c.9 0 1.7-.1 2.5-.4.8.3 1.6.4 2.5.4 4.4 0 8-3.6 8-8s-3.6-8-8-8zm-2.5 13.4C8.4 12.5 7 10.4 7 8s1.4-4.5 3.5-5.4c2.1 1 3.5 3 3.5 5.4s-1.4 4.5-3.5 5.4zM2 8c0-3.2 2.5-5.8 5.7-6C6 3.5 5 5.6 5 8v5.2c-1.8-1.1-3-3-3-5.2zm5 5.9v-.6c.2.3.5.5.7.7-.2 0-.5-.1-.7-.1zm6.3.1C15 12.5 16 10.4 16 8s-1-4.5-2.7-6c3.2.2 5.7 2.8 5.7 6s-2.5 5.8-5.7 6z"></path>
+      </symbol>
+      <symbol id="icon-soulless" viewbox="0 0 728.4 102.9">
+        <path d="M61.6 28.4c-6.5-2.3-11.9-3.5-16-3.5-4 0-6 1.4-6 4.3 0 2.2 1.3 4 3.8 5.2 2.6 1.2 6.7 2.6 12.2 4.1 7 2 12.8 3.9 17.4 5.9 4.6 2 8.7 5.1 12.1 9.3 3.5 4.2 5.2 9.8 5.2 16.7 0 7.1-1.8 13-5.5 17.9-3.6 4.8-8.5 8.3-14.8 10.7-6.3 2.3-13.2 3.5-20.9 3.5-8.7 0-17.4-1.4-26.2-4.3C14.1 95.4 6.4 91.5 0 86.5L12 62c4.9 4.3 11.2 8 18.6 11 7.5 3 13.7 4.6 18.8 4.6 2.4 0 4.3-.4 5.7-1.3 1.4-.9 2.1-2.3 2.1-4.1 0-2.2-1.3-4-4-5.2-2.7-1.3-6.8-2.6-12.5-4-6.9-1.8-12.7-3.6-17.3-5.5-4.6-1.9-8.6-4.9-12-8.9-3.4-4-5-9.4-5-16.1 0-6.5 1.7-12.2 5.2-17.2C15.1 10.4 20 6.6 26.3 4 32.7 1.3 40 0 48.4 0c7.7 0 15.3 1.1 22.9 3.2 7.6 2.1 14.2 5 19.8 8.5L79.4 36.5c-5.3-3-11.3-5.7-17.8-8.1z"></path>
+        <path d="M172.1 7c8.2 4.4 14.6 10.5 19.2 18.2 4.6 7.7 6.9 16.5 6.9 26.2 0 9.8-2.3 18.6-6.9 26.5-4.6 7.8-11 14-19.2 18.4-8.2 4.4-17.5 6.7-27.7 6.7-10.3 0-19.5-2.2-27.7-6.7-8.2-4.4-14.6-10.6-19.2-18.4-4.6-7.8-6.9-16.7-6.9-26.5s2.3-18.6 6.9-26.3c4.6-7.7 11-13.8 19.2-18.1 8.2-4.3 17.5-6.5 27.7-6.5 10.2-.1 19.4 2.1 27.7 6.5zm-37.8 23.6c-3.2 2.1-5.8 5-7.7 8.6-1.9 3.6-2.9 7.7-2.9 12.3 0 4.6 1 8.7 2.9 12.4 1.9 3.7 4.5 6.6 7.7 8.8 3.2 2.1 6.7 3.2 10.4 3.2s7.1-1 10.2-3.1c3.1-2.1 5.5-5 7.3-8.8 1.8-3.7 2.7-7.9 2.7-12.5s-.9-8.7-2.7-12.4c-1.8-3.7-4.2-6.6-7.3-8.6-3.1-2.1-6.5-3.1-10.2-3.1-3.7 0-7.2 1.1-10.4 3.2z"></path>
+        <path d="M239.1 71.4c2.8 3 6.2 4.5 10.1 4.5 3.8 0 7-1.5 9.5-4.4 2.5-2.9 3.8-6.8 3.8-11.5V2.5H295v57.4c0 8.6-1.9 16.1-5.7 22.6-3.8 6.5-9.1 11.5-16 15s-15 5.3-24.2 5.3-17.4-1.8-24.4-5.3-12.5-8.6-16.4-15c-3.9-6.5-5.8-14-5.8-22.6V2.5H235v57.4c-.1 4.7 1.3 8.5 4.1 11.5z"></path>
+        <path d="M304.1 2.5h32.5v71.1h40.9v27h-73.4V2.5z"></path>
+        <path d="M382.3 2.5h32.5v71.1h40.9v27h-73.4V2.5z"></path>
+        <path d="M460.6 2.5h83v24.6h-50.5v12H539v24.6h-45.9V76h51.8v24.6h-84.3V2.5z"></path>
+        <path d="M609.4 28.4c-6.5-2.3-11.9-3.5-16-3.5-4 0-6 1.4-6 4.3 0 2.2 1.3 4 3.8 5.2 2.6 1.2 6.7 2.6 12.2 4.1 7 2 12.8 3.9 17.4 5.9 4.6 2 8.7 5.1 12.1 9.3 3.5 4.2 5.2 9.8 5.2 16.7 0 7.1-1.8 13-5.5 17.9-3.7 4.8-8.7 8.4-14.9 10.7-6.3 2.3-13.2 3.5-20.9 3.5-8.7 0-17.4-1.4-26.2-4.3s-16.5-6.7-22.9-11.7l12-24.5c4.9 4.3 11.2 8 18.6 11 7.5 3 13.7 4.6 18.8 4.6 2.4 0 4.3-.4 5.7-1.3 1.4-.9 2.1-2.3 2.1-4.1 0-2.2-1.3-4-4-5.2-2.7-1.3-6.8-2.6-12.5-4-6.9-1.8-12.7-3.6-17.3-5.5-4.6-1.9-8.6-4.9-12-8.9-3.4-4-5-9.4-5-16.1 0-6.5 1.7-12.2 5.2-17.2 3.5-4.9 8.4-8.7 14.7-11.3 6.3-2.6 13.7-3.9 22.1-3.9 7.7 0 15.3 1.1 22.9 3.2 7.6 2.1 14.2 5 19.8 8.5L627 36.6c-5.1-3.1-11.1-5.8-17.6-8.2z"></path>
+        <path d="M698.9 28.4c-6.5-2.3-11.9-3.5-16-3.5-4 0-6 1.4-6 4.3 0 2.2 1.3 4 3.8 5.2 2.6 1.2 6.7 2.6 12.2 4.1 7 2 12.8 3.9 17.4 5.9 4.6 2 8.7 5.1 12.1 9.3 3.5 4.2 5.2 9.8 5.2 16.7 0 7.1-1.8 13-5.5 17.9-3.7 4.8-8.7 8.4-14.9 10.7-6.3 2.3-13.2 3.5-20.9 3.5-8.7 0-17.4-1.4-26.2-4.3-8.8-2.8-16.4-6.7-22.9-11.7l12-24.5c4.9 4.3 11.2 8 18.6 11 7.5 3 13.7 4.6 18.8 4.6 2.4 0 4.3-.4 5.7-1.3 1.4-.9 2.1-2.3 2.1-4.1 0-2.2-1.3-4-4-5.2s-6.8-2.6-12.5-4c-6.9-1.8-12.7-3.6-17.3-5.5-4.6-1.9-8.6-4.9-12-8.9-3.4-4-5-9.4-5-16.1 0-6.5 1.7-12.2 5.2-17.2 3.5-4.9 8.4-8.7 14.7-11.3 6.3-2.6 13.7-3.9 22.1-3.9 7.7 0 15.3 1.1 22.9 3.2 7.6 2.1 14.2 5 19.8 8.5l-11.8 24.8c-5.2-3.1-11.1-5.8-17.6-8.2z"></path>
+      </symbol>
+      <symbol id="icon-tumblr" viewbox="0 0 9 16">
+        <path d="M5.6 0H3.1C2.9 1.4 2.7 3.4 0 3.6v3.2h2.3v5.3c0 2 1.5 3.9 4.4 3.9 1.2 0 2.3-.1 2.3-.1v-3.4H6.8c-1.1 0-1.2-.5-1.2-1.2V6.9H9V3.4H5.6V0z"></path>
+      </symbol>
+      <symbol id="icon-twitter" viewbox="0 0 16 14">
+        <path d="M5 13.5c6 0 9.3-5 9.3-9.3v-.4C15 3.3 15.6 2.7 16 2c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1C9.3.5 7.8 2 7.8 3.8c0 .3 0 .5.1.7-2.8-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.6 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.2-.6.2-.9.2-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.4 1 3.2 1.5 5 1.5"></path>
+      </symbol>
+    </svg>
+        </div>
+        <main class="content">
+            <div class="slides js-slides">
+                <div class="slide preload-slide active-slide" data-slide-num="0">
+                    <div class="slide__slice" data-slice-num="1">
+                    </div>
+                    <div class="slide__slice" data-slice-num="2">
+                    </div>
+                    <div class="slide__slice" data-slice-num="3">
+                    </div>
+                    <div class="slide__slice" data-slice-num="4">
+                    </div>
+                    <div class="slide__slice" data-slice-num="5">
+                    </div>
+                    <div class="slide__num js-slide-num"><span>
+            <svg class="icon-0 ">
+              <use xlink:href="#icon-0"></use>
+            </svg></span><span>
+            <svg class="icon-0 ">
+              <use xlink:href="#icon-0"></use>
+            </svg></span>
+                    </div>
+                </div>
+                <div class="slide dark-slide" data-slide-num="1">
+                    <div class="slide__slice" data-slice-num="1">
+                        <div class="slide__slice-img bg-slide-1"></div>
+                    </div>
+                    <div class="slide__slice" data-slice-num="2">
+                        <div class="slide__slice-img bg-slide-1"></div>
+                    </div>
+                    <div class="slide__slice" data-slice-num="3">
+                        <div class="slide__slice-img bg-slide-1"></div>
+                    </div>
+                    <div class="slide__slice" data-slice-num="4">
+                        <div class="slide__slice-img bg-slide-1"></div>
+                    </div>
+                    <div class="slide__slice" data-slice-num="5">
+                        <div class="slide__slice-img bg-slide-1"></div>
+                    </div>
+                    <div class="slide__num js-slide-num"><span>
+            <svg class="icon-0 ">
+              <use xlink:href="#icon-0"></use>
+            </svg></span><span>
+            <svg class="icon-1 ">
+              <use xlink:href="#icon-1"></use>
+            </svg></span>
+                    </div>
+                </div>
+                <div class="slide" data-slide-num="2">
+                    <div class="slide__slice" data-slice-num="1">
+                        <div class="slide__slice-img bg-slide-2"></div>
+                    </div>
+                    <div class="slide__slice" data-slice-num="2">
+                        <div class="slide__slice-img bg-slide-2"></div>
+                    </div>
+                    <div class="slide__slice" data-slice-num="3">
+                        <div class="slide__slice-img bg-slide-2"></div>
+                    </div>
+                    <div class="slide__slice" data-slice-num="4">
+                        <div class="slide__slice-img bg-slide-2"></div>
+                    </div>
+                    <div class="slide__slice" data-slice-num="5">
+                        <div class="slide__slice-img bg-slide-2"></div>
+                    </div>
+                    <div class="slide__num js-slide-num"><span>
+            <svg class="icon-0 ">
+              <use xlink:href="#icon-0"></use>
+            </svg></span><span>
+            <svg class="icon-2 ">
+              <use xlink:href="#icon-2"></use>
+            </svg></span>
+                    </div>
+                </div>
+            </div>
+            <div class="taglines js-taglines js-matrix-r">
+                <div class="tagline js-matrix-r" data-tagline-num="1">
+                    <svg class="icon-soulless ">
+          <use xlink:href="#icon-soulless"></use>
+        </svg>
+                    <div class="tagline__slice" data-tnum="1">
+                        <div class="tagline__text">
+                            <svg class="icon-soulless ">
+              <use xlink:href="#icon-soulless"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="2">
+                        <div class="tagline__text">
+                            <svg class="icon-soulless ">
+              <use xlink:href="#icon-soulless"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="3">
+                        <div class="tagline__text">
+                            <svg class="icon-soulless ">
+              <use xlink:href="#icon-soulless"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="4">
+                        <div class="tagline__text">
+                            <svg class="icon-soulless ">
+              <use xlink:href="#icon-soulless"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="5">
+                        <div class="tagline__text">
+                            <svg class="icon-soulless ">
+              <use xlink:href="#icon-soulless"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="6">
+                        <div class="tagline__text">
+                            <svg class="icon-soulless ">
+              <use xlink:href="#icon-soulless"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="7">
+                        <div class="tagline__text">
+                            <svg class="icon-soulless ">
+              <use xlink:href="#icon-soulless"></use>
+            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tagline js-matrix-r" data-tagline-num="2">
+                    <svg class="icon-brutalism ">
+          <use xlink:href="#icon-brutalism"></use>
+        </svg>
+                    <div class="tagline__slice" data-tnum="1">
+                        <div class="tagline__text">
+                            <svg class="icon-brutalism ">
+              <use xlink:href="#icon-brutalism"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="2">
+                        <div class="tagline__text">
+                            <svg class="icon-brutalism ">
+              <use xlink:href="#icon-brutalism"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="3">
+                        <div class="tagline__text">
+                            <svg class="icon-brutalism ">
+              <use xlink:href="#icon-brutalism"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="4">
+                        <div class="tagline__text">
+                            <svg class="icon-brutalism ">
+              <use xlink:href="#icon-brutalism"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="5">
+                        <div class="tagline__text">
+                            <svg class="icon-brutalism ">
+              <use xlink:href="#icon-brutalism"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="6">
+                        <div class="tagline__text">
+                            <svg class="icon-brutalism ">
+              <use xlink:href="#icon-brutalism"></use>
+            </svg>
+                        </div>
+                    </div>
+                    <div class="tagline__slice" data-tnum="7">
+                        <div class="tagline__text">
+                            <svg class="icon-brutalism ">
+              <use xlink:href="#icon-brutalism"></use>
+            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="preload js-preload">
+                <div class="preload__pillar"></div>
+                <div class="preload__pillar"></div>
+                <div class="preload__pillar">
+                    <div class="preload__counter js-preload-counter c-black">0</div>
+                </div>
+                <div class="preload__pillar"></div>
+                <div class="preload__pillar"></div>
+                <div class="preload__counter js-preload-counter c-white">0</div>
+            </div>
+            <div class="dd js-dd">
+                <div class="dd__hint js-dd-hint">
+                    <div class="dd__dots js-dd-dots">
+                        <div class="dd__dot"></div>
+                        <div class="dd__dot"></div>
+                        <div class="dd__dot"></div>
+                        <div class="dd__dot"></div>
+                        <div class="dd__dot"></div>
+                        <div class="dd__dot"></div>
+                    </div>
+                    <div class="dd__circle js-dd-cirlce"></div>
+                </div>
+                <div class="dd__text js-separate-text">drag up to explore</div>
+            </div>
+            <div class="info js-info">
+                <div class="info__aside info__aside_lt js-aside-black">
+                    <div class="info__slot info__slot_sml js-black-mode">
+                        <div class="info__text">01</div>
+                    </div>
+                    <div class="info__slot info__slot_bgg js-black-mode">
+                        <div class="info__text">slider transition</div>
+                    </div>
+                </div>
+                <div class="info__aside info__aside_lt light-mode js-aside-white">
+                    <div class="info__slot info__slot_sml js-white-mode">
+                        <div class="info__text">01</div>
+                    </div>
+                    <div class="info__slot info__slot_bgg js-white-mode">
+                        <div class="info__text">slider transition</div>
+                    </div>
+                </div>
+                <div class="info__aside info__aside_rb js-aside-black js-contacts-btn">
+                    <div class="info__slot info__slot_sml js-black-mode">
+                        <div class="info__show-btn"></div>
+                    </div>
+                    <div class="info__slot info__slot_bgg js-black-mode">
+                        <div class="info__text">follow us</div>
+                    </div>
+                </div>
+                <div class="info__aside info__aside_rb light-mode js-aside-white js-contacts-btn">
+                    <div class="info__slot info__slot_sml js-white-mode">
+                        <div class="info__show-btn"></div>
+                    </div>
+                    <div class="info__slot info__slot_bgg js-white-mode">
+                        <div class="info__text">follow us</div>
+                    </div>
+                </div>
+                <div class="controls js-controls">
+                    <div class="controls__item-w js-ctrl-w-up">
+                        <div class="controls__item controls__item_up ctrl-b js-black-mode"></div>
+                        <div class="controls__item controls__item_up ctrl-w js-white-mode"></div>
+                    </div>
+                    <div class="controls__item-w js-ctrl-w-dn">
+                        <div class="controls__item controls__item_dn ctrl-b js-black-mode"></div>
+                        <div class="controls__item controls__item_dn ctrl-w js-white-mode"></div>
+                    </div>
+                </div>
+                <div class="popup js-popup js-black-mode">
+                    <div class="popup__slice"></div>
+                    <div class="popup__slice"></div>
+                    <div class="popup__slice"></div>
+                    <div class="popup__slice"></div>
+                    <div class="popup__slice"></div>
+                    <div class="info-cards js-info-cards">
+                        <div class="i-card js-i-card">
+                            <div class="i-card__title js-separate-text">interactive art director</div>
+                            <div class="i-card__name js-separate-text">Sergey Churilov</div>
+                            <div class="i-card__links-w"><a class="i-card__link" href="https://www.behance.net/SergeyChurilov" title="behance" target="_blank">
+                <svg class="icon-behance ">
+                  <use xlink:href="#icon-behance"></use>
+                </svg></a><a class="i-card__link" href="https://dribbble.com/Churilov" title="dribbble" target="_blank">
+                <svg class="icon-dribbble ">
+                  <use xlink:href="#icon-dribbble"></use>
+                </svg></a><a class="i-card__link" href="https://twitter.com/Sergey_Churilov" title="twitter" target="_blank">
+                <svg class="icon-twitter ">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg></a><a class="i-card__link" href="https://www.instagram.com/sergio_churilov/" title="instagram" target="_blank">
+                <svg class="icon-instagram ">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg></a><a class="i-card__link" href="https://www.facebook.com/churilovserg" title="facebook" target="_blank">
+                <svg class="icon-facebook ">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg></a>
+                            </div>
+                        </div>
+                        <div class="i-card js-i-card">
+                            <div class="i-card__title js-separate-text">creative frontend developer</div>
+                            <div class="i-card__name js-separate-text">Andrey Manoylov</div>
+                            <div class="i-card__links-w"><a class="i-card__link" href="http://manoylov.tumblr.com/" title="tumblr" target="_blank">
+                <svg class="icon-tumblr ">
+                  <use xlink:href="#icon-tumblr"></use>
+                </svg></a><a class="i-card__link" href="https://www.openprocessing.org/user/23616/#sketches" title="op-pr" target="_blank">
+                <svg class="icon-op-pr ">
+                  <use xlink:href="#icon-op-pr"></use>
+                </svg></a><a class="i-card__link" href="https://twitter.com/ManoylovAC" title="twitter" target="_blank">
+                <svg class="icon-twitter ">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg></a><a class="i-card__link" href="https://codepen.io/Manoylov" title="codepen" target="_blank">
+                <svg class="icon-codepen ">
+                  <use xlink:href="#icon-codepen"></use>
+                </svg></a><a class="i-card__link" href="https://www.facebook.com/epistolariy" title="facebook" target="_blank">
+                <svg class="icon-facebook ">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-cursor-w js-cursor-wrap hide">
+                <div class="m-cursor js-cursor">
+                    <div class="m-cursor__dot"></div>
+                </div>
+            </div>
+            <div class="m-cursor-line js-cursor-line"></div>
+        </main>
+    </body>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
