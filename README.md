@@ -21,8 +21,9 @@
 11. [canvas烟花动画](https://sunyctf.github.io/js-effects/canvas烟花动画/index.html) 
 12. [css+js人物关节拉伸模拟动画](https://sunyctf.github.io/js-effects/css+js人物关节拉伸模拟动画/index.html) 
 13. [css+js3D立体杯子旋转动画](https://sunyctf.github.io/js-effects/css+js3D立体杯子旋转动画/index.html) 
-13. [canvas粒子组合三角形3D旋转动画](https://sunyctf.github.io/js-effects/canvas粒子组合三角形3D旋转动画/index.html) 
-13. [canvas粒子文字动画特效](https://sunyctf.github.io/js-effects/canvas粒子文字动画/index.html) 
+14. [canvas粒子组合三角形3D旋转动画](https://sunyctf.github.io/js-effects/canvas粒子组合三角形3D旋转动画/index.html) 
+15. [canvas粒子文字动画特效](https://sunyctf.github.io/js-effects/canvas粒子文字动画/index.html) 
+16. [css+js滑块切换过渡动画](https://sunyctf.github.io/js-effects/css+js滑块切换过渡动画/index.html) 
 
 ### 404page
 
