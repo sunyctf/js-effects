@@ -25,6 +25,7 @@
 15. [canvas粒子文字动画特效](https://sunyctf.github.io/js-effects/canvas粒子文字动画/index.html) 
 16. [css+js滑块切换过渡动画](https://sunyctf.github.io/js-effects/css+js滑块切换过渡动画/index.html) 
 16. [canvas新年3D烟花动画](https://sunyctf.github.io/js-effects/canvas新年3D烟花动画/index.html) 
+16. [canvas鼠标跟随几何动画](https://sunyctf.github.io/js-effects/canvas鼠标跟随几何动画/index.html) 
 
 ### 404page
 
