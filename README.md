@@ -26,6 +26,7 @@
 16. [css+js滑块切换过渡动画](https://sunyctf.github.io/js-effects/css+js滑块切换过渡动画/index.html) 
 16. [canvas新年3D烟花动画](https://sunyctf.github.io/js-effects/canvas新年3D烟花动画/index.html) 
 16. [canvas鼠标跟随几何动画](https://sunyctf.github.io/js-effects/canvas鼠标跟随几何动画/index.html) 
+16. [css+js卡片详情页展开效果图片](https://sunyctf.github.io/js-effects/css+js卡片详情页展开效果图片/index.html) 
 
 ### 404page
 
