@@ -1,0 +1,21 @@
+body {
+    background: #004;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    background: #76f;
+    width: 40px;
+    height: 5px;
+    transform-origin: 0% 50%;
+}
+
+.arrow:after {
+    display: block;
+    content: '';
+    border-top: 7px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 14px solid #76f;
+    transform: translate(40px, -5px);
+}
