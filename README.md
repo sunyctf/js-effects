@@ -33,6 +33,7 @@
 ### 404page
 
 - [404黑白点抖动动画](https://sunyctf.github.io/js-effects/404page/404黑白点抖动动画/index.html)
+- [404文字掉落动画](https://sunyctf.github.io/js-effects/404page/404文字掉落动画/index.html)
 
 ## 使用说明
 
