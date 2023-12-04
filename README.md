@@ -29,6 +29,7 @@
 16. [css+js卡片详情页展开效果图片](https://sunyctf.github.io/js-effects/css+js卡片详情页展开效果图片/index.html)
 16. [canvas全屏七夕爱心表白特效](https://sunyctf.github.io/js-effects/canvas全屏七夕爱心表白特效/index.html) 
 16. [css+js箭头跟随鼠标](https://sunyctf.github.io/js-effects/css+js箭头跟随鼠标/index.html) 
+16. [css+js放大镜效果](https://sunyctf.github.io/js-effects/css+js放大镜效果/index.html) 
 
 ### 404page
 
