@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff2') format('woff2'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+
+.w1160 {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+.fw200 {
+  font-weight: 200;
+}
+.fz14 {
+  font-size: 14px;
+}
+.fz16 {
+  font-size: 16px;
+}
+.fz22{
+  font-size: 22px;
+}
+
+.fz28{
+  font-size: 28px;
+}
+.lh12{
+  line-height: 12px;
+}
+
+.lh24{
+  line-height: 24px;
+}
+
+.c-fff {
+  color: #fff;
+}
+
+.c-da {
+  color: #dadada;
+ }
+
+.c-d2 {
+ color: #d2d2d2;
+}
+
+.icon {
+  position: relative;
+}
+
+.icon:after {
+  position: absolute;
+  content: '';
+  font-family: 'iconfont' !important;
+  color: #c1c1c1;
+  font-size: 16px;
+}
+
+.icon-arrow-down::after {
+  content: '\e6b9';
+  top: 0;
+  right: -12px;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+.icon-arrow-right::after {
+  content: '\e601';
+  color: #ff7200;
+  top: 0;
+  right: 24px;
+  transition: .2s;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.visib-hid {
+  text-indent: -9999;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+
+
+.pr10 {
+  padding-right: 10px;
+}

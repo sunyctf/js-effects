@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+<style>
+  .product-intro {
+    position: relative;
+    width: 450px;
+    margin: 100px 0 0 250px;
+  }
+  
+  .preview {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border: 1px solid #ccc;
+  }
+  
+  .mask {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 60%;
+    background-color: rgba(228, 228, 11, 0.3);
+    border: 1px solid rgba(122, 122, 122, .4);
+    cursor: move;
+  }
+  
+  .enlargement {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    left: 450px;
+    top: -20px;
+    width: 540px;
+    height: 540px;
+  }
+  
+  .active {
+    display: block;
+  }
+</style>
+
+<body>
+  <div class="product-intro">
+    <div class="preview">
+      <img src="images/m30.jpg" width="450" height="450" alt="m30">
+      <div class="mask"></div>
+    </div>
+    <div class="enlargement">
+      <img src="images/m30-big.jpg" alt="m30">
+    </div>
+  </div>
+  <script src="js/common.js"></script>
+  <script>
+    var oPreview = $('.preview');
+    var oMask = $('.mask');
+    var oEnlargeImg = $('.enlargement img');
+    var oEnlarge = $('.enlargement');
+    var tabEventMap = {
+      mouseenter: (e) => {
+        oMask.classList.add('active');
+        oEnlarge.classList.add('active');
+      },
+      mouseleave: (e) => {
+        oMask.classList.remove('active');
+        oEnlarge.classList.remove('active');
+      },
+      mousemove: (e) => {
+        var x = e.clientX - getPosition(oPreview).left;
+        var y = e.clientY - getPosition(oPreview).top;
+        var _x = x - oMask.offsetWidth / 2;
+        var _y = y - oMask.offsetHeight / 2;
+        _x = Math.max(0, _x);
+        _x = Math.min(_x, oPreview.offsetWidth - oMask.offsetWidth);
+
+        _y = Math.max(0, _y);
+        _y = Math.min(_y, oPreview.offsetHeight - oMask.offsetHeight);
+        oMask.style.left = _x + 'px';
+        oMask.style.top = _y + 'px';
+
+        // 展示比例   (展示区图片宽度 - 展示区宽度) / (预览区宽度 - 遮罩层宽度)
+        var moveX = (oPreview.offsetWidth - oMask.offsetWidth) /
+          (oEnlargeImg.offsetWidth - oEnlarge.offsetWidth);
+        var moveY = (oPreview.offsetHeight - oMask.offsetHeight) /
+          (oEnlargeImg.offsetHeight - oEnlarge.offsetHeight);
+        oEnlargeImg.style.marginLeft = -_x * moveX + 'px';
+        oEnlargeImg.style.marginTop = -_y * moveY + 'px';
+      }
+    }
+    oPreview.addEventListener('mouseenter', handle);
+    oPreview.addEventListener('mouseleave', handle);
+    oPreview.addEventListener('mousemove', handle)
+
+    function handle(e) {
+      if (tabEventMap[e.type] && typeof tabEventMap[e.type] === 'function') {
+        tabEventMap[e.type](e);
+      }
+    }
+  </script>
+</body>
+
+</html>
