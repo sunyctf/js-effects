@@ -31,6 +31,7 @@
 16. [css+js箭头跟随鼠标](https://sunyctf.github.io/js-effects/css+js箭头跟随鼠标/index.html) 
 16. [css+js放大镜效果](https://sunyctf.github.io/js-effects/css+js放大镜效果/index.html)
 16. [canvas鼠标跟随爱心背景特效](https://sunyctf.github.io/js-effects/canvas鼠标跟随爱心背景特效/index.html)
+16. [css3+js酷炫抽象花蕊动画特效](https://sunyctf.github.io/js-effects/css3+js酷炫抽象花蕊动画特效/index.html)
 
 ### 404page
 
