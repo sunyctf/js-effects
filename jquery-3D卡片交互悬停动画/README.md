@@ -10,7 +10,7 @@ HTML5 + CSS3 + JQuery + DOM
 
 #### 在线预览
 
-[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/canvas碰碰球动画/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/js-effects/canvas碰碰球动画/index.html)
+[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/jquery-3D卡片交互悬停动画/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/js-effects/jquery-3D卡片交互悬停动画/index.html)
 
 #### 软件架构
 
