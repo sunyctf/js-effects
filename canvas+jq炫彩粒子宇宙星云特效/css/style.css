@@ -1,0 +1,10 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: hsla(242, 30%, 5%, 1);
+}
+
+canvas {
+  width: 100%;
+}
