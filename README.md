@@ -34,6 +34,7 @@
 16. [css3+js酷炫抽象花蕊动画特效](https://sunyctf.github.io/js-effects/css3+js酷炫抽象花蕊动画特效/index.html)
 16. [jquery-3D卡片交互悬停动画](https://sunyctf.github.io/js-effects/jquery-3D卡片交互悬停动画/index.html)
 16. [canvas+jq炫彩粒子宇宙星云特效](https://sunyctf.github.io/js-effects/canvas+jq炫彩粒子宇宙星云特效/index.html)
+16. [css+js多个爱心层叠波浪动画](https://sunyctf.github.io/js-effects/css+js多个爱心层叠波浪动画/index.html)
 
 ### 404page
 
