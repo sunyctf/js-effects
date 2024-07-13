@@ -1,0 +1,14 @@
+html, body {
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:linear-gradient(to top, rgb(255,255,255) 55%, rgb(110,215,255) 80%, rgb(75,100,255) 130%);
+  min-height:440px;
+  padding:0;
+  margin:0;
+}
+
+* {
+  position:absolute;
+  user-select: none;
+}
