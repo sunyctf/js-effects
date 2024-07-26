@@ -1,0 +1,46 @@
+*{margin:0;padding:0}
+li,ul{list-style:none}
+a{text-decoration:none}
+.body{width:100%;margin:0 auto;min-width:1423px}
+.article{background:#212121}
+.product{width:1077px;height:184px;margin:0 auto}
+.product .product_introduce{width:100%;min-width:1077px;height:184px;margin-bottom:5px}
+.product .product_introduce .product_name{width:149px;height:183px;float:left;position:relative;color:#fff}
+.product .product_introduce .product_main{height:184px;background:#e6e6e6;float:left;margin-left:5px;border-radius:13px}
+.product_main .product_j{padding-left:58px;width:120px;float:left}
+.product_main .product_j h3{font-family:"微软雅黑";font-size:16px;margin-top:33px}
+.product_main .product_j .product_x{font-size:11px;margin-left:10px}
+.product .product_introduce .product_picture{float:left;margin:5px 0 0 8px;display:table;width:246px;height:172px}
+.product_introduce .product_picture .product_picture1{width:242px;height:168px;border:2px solid #bfbfbf;border-radius:10px;text-align:center;display:table-cell;vertical-align:middle}
+.product_introduce .product_picture .product_picture1 a img{max-width: 213px;max-height: 132px;}
+.product .advertisement{margin-bottom:7px}
+.product .advertisement a,.product .advertisement a img{display:block;margin:0 auto}
+.picture{width:976px;height:562px;border:1px solid #c7c7c7bf;font-family:"宋体";display:none;z-index:99999;position:fixed;left:0;top:50px;bottom:0;right:0;margin:0 auto}
+.picture .picture_top{background:#f3f3f3;height:33px;color:#000}
+.picture .picture_top span{font-size:12px;padding-left:20px;line-height:33px}
+.picture .picture_top a{float:right;font-size:30px;line-height:27px;padding-right:5px;color:#3f3f3f;font-family:"微软雅黑"}
+.picture .picture_bottom{width:100%;height:529px;background:#fff}
+.picture .picture_bottom .picture_left{width:771px;height:100%;float:left}
+.picture .picture_bottom .picture_left .picture_img{position:relative;left:56px;top:51px;width:658px;height:424px;display:table;text-align:center}
+.picture_bottom .picture_left .picture_img .picture_img2{width:658px;height:424px;display:table-cell;vertical-align:middle}
+.picture_bottom .picture_left .picture_img .picture_img2 img{max-width:658px;max-height:424px}
+.picture_bottom .picture_left .prev{display:inline-block;width:17px;height:33px;position:relative;top:-178px;left:18px}
+.picture_bottom .picture_left .next{display:inline-block;width:17px;height:33px;position:relative;top:-178px;right:18px;float:right}
+.picture_bottom .picture_left .prev a{display:inline-block;width:17px;height:33px;background:url(../img/previous-page.png) no-repeat}
+.picture_bottom .picture_left .next a{display:inline-block;width:17px;height:33px;background:url(../img/next-page.png) no-repeat}
+.picture .picture_bottom .picture_right{width:205px;height:100%;float:left}
+.picture_xiao{background:coral;width:50px;height:50px;float:left;margin:5px 8px}
+.picture_xiao img{width:100%}
+.picture .picture_bottom .picture_right .picture_name{margin-left:25px;margin-top:48px}
+.picture_name h3{font-family:"微软雅黑";font-size:16px;margin-top:33px;color: #000;}
+.product_x{font-size:11px;margin-left:10px}
+.picture_suo{width:173px;height:382px;border:1px solid #e4e4e4;margin-left:2px;margin-top:20px}
+.picture_suo .picture_suo_t{padding:14.5px;height:300px}
+.picture_suo .picture_suo_t .picture_suo_img{width:58px;height:58px;margin:6px 5px;border:2px solid #e4e4e4;float:left;cursor:pointer}
+.picture_suo .picture_suo_img img{width:58px;height:58px}
+.picture_suo .picture_fenye{text-align:center;width:173px;font-size:14px;height:21px;position:relative}
+.picture_suo .picture_fenye span{position:relative;top:-5px}
+.picture_suo .picture_fenye .picture_next,.picture_suo .picture_fenye .picture_prev{display:inline-block;width:20px;height:21px;cursor:pointer}
+.ljxq22{display:inline-block;position:relative;bottom:40px;right:-821px}
+.picture_suo .picture_suo_t .suo-img{border:2px solid #e4393c}
+.tanchukuang_bg11{width:100%;min-width:1164px;height:100%;background:#000;position:fixed;z-index:1001;filter:alpha(opacity=20);opacity:.4;left:0;top:0;display:none}
