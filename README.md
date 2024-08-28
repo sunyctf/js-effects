@@ -38,6 +38,7 @@
 16. [h5+js大海蓝天雁飞过特效](https://sunyctf.github.io/js-effects/h5+js大海蓝天雁飞过特效/index.html)
 16. [jquery彩色网状线条粒子动画](https://sunyctf.github.io/js-effects/jquery彩色网状线条粒子动画/index.html)
 16. [jquery弹出式相册图片放大插件](https://sunyctf.github.io/js-effects/jquery弹出式相册图片放大插件/index.html)
+16. [原生js多形式日历控件](https://sunyctf.github.io/js-effects/原生js多形式日历控件/index.html)
 
 ### 404page
 
