@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS校验</title>
+</head>
+<style>
+    *{font-family:'微软雅黑'!important;margin:0;padding:0;list-style:none;}
+    input{margin:10px;padding:3px 2px;width: 400px;height:30px;}
+    div{display: inline-block;font-size: 14px;}
+    .ingreen{color:green;}
+    .inred{color:red;border:none;background: none;}
+    span{display: inline-block;width: 60px;text-align:center;}
+</style>
+<body>
+<script>
+</script>
+<form >
+<ul id="ocheck">
+    <li><span>姓名:</span><input type="text" class="oChxm" placeholder="最多输入6个字符" /><div class="" type="text" ></div></li>
+    <li><span>手机号:</span><input type="text" class="oChphone"  placeholder="最多输入11个字符"/><div class="" type="text" ></div></li>
+    <li><span>QQ号:</span><input type="text" class="oChQQ" placeholder="最多输入14个字符"/><div class="" type="text" ></div></li>
+    <li><span>邮箱:</span><input type="text" class="oChmail" placeholder="最多输入30个字符"/><div class="" type="text" ></div></li>
+    <li><input type="button" value="提交" class="oCheckSbumit"/><input id="btn" type="button" value="校验"/></li>
+</ul>
+</form>
+<script src="ocheck.js"></script>
+</body>
+</html>
