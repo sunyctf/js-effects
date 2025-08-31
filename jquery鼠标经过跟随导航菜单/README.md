@@ -6,11 +6,11 @@
 
 #### 技术栈
 
-HTML5 canvas + CSS3 + JS +DOM
+ CSS3 + jQuery + JS +DOM
 
 #### 在线预览
 
-[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/canvas鼠标跟随几何动画/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/js-effects/canvas鼠标跟随几何动画/index.html)
+[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/jquery鼠标经过跟随导航菜单/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/js-effects/jquery鼠标经过跟随导航菜单画/index.html)
 
 #### 软件架构
 
