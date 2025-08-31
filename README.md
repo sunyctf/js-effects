@@ -42,6 +42,7 @@
 16. [jquery简单表单实时验证](https://sunyctf.github.io/js-effects/jquery简单表单实时验证/index.html)
 16. [css+js倒计时警报灯特效](https://sunyctf.github.io/js-effects/css+js倒计时警报灯特效/index.html)
 16. [原生js表单验证插件](https://sunyctf.github.io/js-effects/原生js表单验证插件/index.html)
+16. [jquery鼠标经过跟随导航菜单](https://sunyctf.github.io/js-effects/jquery鼠标经过跟随导航菜单/index.html)
 
 ### 404page
 
