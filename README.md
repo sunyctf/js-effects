@@ -43,6 +43,7 @@
 16. [css+js倒计时警报灯特效](https://sunyctf.github.io/js-effects/css+js倒计时警报灯特效/index.html)
 16. [原生js表单验证插件](https://sunyctf.github.io/js-effects/原生js表单验证插件/index.html)
 16. [jquery鼠标经过跟随导航菜单](https://sunyctf.github.io/js-effects/jquery鼠标经过跟随导航菜单/index.html)
+16. [jquery圆形小图切换背景图片特效](https://sunyctf.github.io/js-effects/jquery圆形小图切换背景图片特效/index.html)
 
 ### 404page
 
