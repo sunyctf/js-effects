@@ -89,11 +89,11 @@ TweenMax 是 GSAP 家族中功能最全面的成员之一，其定位如下：
 
 #### 技术栈
 
-HTML5 canvas + CSS3 + JS + JQuery
+HTML5 + CSS3 + JS + JQuery+TweenMax
 
 #### 在线预览
 
-[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/canvas+jq炫彩粒子宇宙星云特效/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/js-effects/canvas+jq炫彩粒子宇宙星云特效/index.html)
+[Github仓库](https://github.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.github.io/js-effects/jquery圆形小图切换背景图片特效/index.html) 🌐 [Gitee仓库](https://gitee.com/sunyctf/js-effects) | [Demo预览](https://sunyctf.gitee.io/js-effects/jquery圆形小图切换背景图片特效/index.html)
 
 #### 软件架构
 
